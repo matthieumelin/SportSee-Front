@@ -15,47 +15,52 @@ import dumbbellIcon from "../assets/icons/dumbbell.svg";
 export default function Sidebar() {
   return (
     <StyledSidebar>
-      <SidebarMenu>
-        <SidebarMenuItem>
-          <SidebarMenuItemLink to="/">
-            <SidebarMenuItemLinkIcon src={meditateIcon} />
-          </SidebarMenuItemLink>
-        </SidebarMenuItem>
-        <SidebarMenuItem>
-          <SidebarMenuItemLink to="/">
-            <SidebarMenuItemLinkIcon src={swimIcon} />
-          </SidebarMenuItemLink>
-        </SidebarMenuItem>
-        <SidebarMenuItem>
-          <SidebarMenuItemLink to="/">
-            <SidebarMenuItemLinkIcon src={bikeIcon} />
-          </SidebarMenuItemLink>
-        </SidebarMenuItem>
-        <SidebarMenuItem>
-          <SidebarMenuItemLink to="/">
-            <SidebarMenuItemLinkIcon src={dumbbellIcon} />
-          </SidebarMenuItemLink>
-        </SidebarMenuItem>
-      </SidebarMenu>
-      <SidebarCopyright>Copyright, SportSee 2020</SidebarCopyright>
+      <SidebarWrapper>
+        <SidebarMenu>
+          <SidebarMenuItem>
+            <SidebarMenuItemLink to="/">
+              <SidebarMenuItemLinkIcon src={meditateIcon} />
+            </SidebarMenuItemLink>
+          </SidebarMenuItem>
+          <SidebarMenuItem>
+            <SidebarMenuItemLink to="/">
+              <SidebarMenuItemLinkIcon src={swimIcon} />
+            </SidebarMenuItemLink>
+          </SidebarMenuItem>
+          <SidebarMenuItem>
+            <SidebarMenuItemLink to="/">
+              <SidebarMenuItemLinkIcon src={bikeIcon} />
+            </SidebarMenuItemLink>
+          </SidebarMenuItem>
+          <SidebarMenuItem>
+            <SidebarMenuItemLink to="/">
+              <SidebarMenuItemLinkIcon src={dumbbellIcon} />
+            </SidebarMenuItemLink>
+          </SidebarMenuItem>
+        </SidebarMenu>
+        <SidebarCopyright>Copyright, SportSee 2020</SidebarCopyright>
+      </SidebarWrapper>
     </StyledSidebar>
   );
 }
 
 const StyledSidebar = styled.div`
   background: #000;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
   width: 117px;
-  height: 90.7vh;
+  height: 100vh;
+  z-index: -999;
+`;
+const SidebarWrapper = styled.div`
+height: calc(100vh - 150px);
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
 `;
 const SidebarMenu = styled.ul`
   padding: 0;
   list-style: none;
-  position: absolute;
-  top: 150px;
+  margin: auto;
 `;
 const SidebarMenuItem = styled.li`
   margin: 0 0 20px 0;
@@ -85,6 +90,5 @@ const SidebarCopyright = styled.p`
   font-size: 0.625rem;
   font-family: "Roboto", sans-serif;
   white-space: nowrap;
-  position: absolute;
-  bottom: 117px;
+  margin: auto;
 `;

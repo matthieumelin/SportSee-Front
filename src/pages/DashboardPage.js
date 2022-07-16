@@ -73,13 +73,18 @@ export default function DashboardPage() {
 }
 
 const StyledDashboardPage = styled.div`
+overflow: hidden;
 `;
-const Main = styled.main``;
+const Main = styled.main`
+`;
 const PageWrapper = styled.div`
-  display: flex;
+display: flex;
+  gap: 20px;
 `;
 const Dashboard = styled.section`
-  padding: 30px 50px;
+padding: 20px 0 0 0;
+position: absolute;
+left: 150px;
 `;
 const DashboardTitle = styled.h1`
   margin: 0;
@@ -96,7 +101,6 @@ const DashboardSubTitle = styled.p`
 const DashboardWrapper = styled.div`
   display: flex;
   gap: 30px;
-  margin: 50px 0 0 0;
 `;
 const DashboardAnalytics = styled.div`
 `;
