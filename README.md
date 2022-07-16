@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+# Projet 12 - SportSee
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Code source du Projet 12 - Développez un tableau de bord d'analytics avec React du parcours Développeur d'application - JavaScript React d'OpenClassrooms.
 
-## Available Scripts
+## Installation
+### Prérequis
+- [NodeJS (version 16.16)](https://nodejs.org/en/)
+- [npm](https://www.npmjs.com/)
 
-In the project directory, you can run:
+### Installation et lancement du Back-end
+Commencer par cloner le repo du back-end :
 
-### `npm start`
+`git clone https://github.com/matthieumelin/SportSee-Back.git`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Tout en étant dans le repo du back-end, lancer un terminal et installer les dépendances du projet :
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+`npm install`
 
-### `npm test`
+C'est prêt ! lancer le back-end sur le port 3030 :
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+`npm run start`
 
-### `npm run build`
+### Installation et lancement du Front-end
+Commencer par cloner le repo du front-end :
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+`git clone https://github.com/matthieumelin/SportSee-Front.git`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Tout en étant dans le repo du front-end, lancer un terminal et installer les dépendances du projet :
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+`npm install`
 
-### `npm run eject`
+C'est prêt ! lancer le front-end sur le port 3000 :
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+`npm run start`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+URL de l'application web : [http://localhost:3000](http://localhost:3000)
