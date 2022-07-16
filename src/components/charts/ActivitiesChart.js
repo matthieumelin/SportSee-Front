@@ -50,7 +50,7 @@ export default function ActivitiesChart({ userId }) {
       }
     }
     setOrderedActivities(array);
-  }, []);
+  }, [activities]);
 
   return (
     <StyledActivitiesChart>

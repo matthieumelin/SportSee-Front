@@ -251,7 +251,7 @@ const getFirstName = (userData) => {
 /**
  * @returns {Object} default data of stats cards
  */
- export const getDefaultKeyData = () => {
+export const getDefaultKeyData = () => {
   return {
     calorieCount: 0,
     proteinCount: 0,
@@ -276,5 +276,5 @@ const getKeyData = (userData) => {
  * @returns data for score chart
  */
 const getTodayScore = (userData) => {
-  return userData === "can not get user" ? 0 : userData.data.todayScore;
+  return userData === "can not get user" ? 0 : userData.data.todayScore || userData.data.score;
 };

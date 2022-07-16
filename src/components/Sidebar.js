@@ -49,7 +49,7 @@ const StyledSidebar = styled.div`
   align-items: center;
   position: relative;
   width: 117px;
-  height: 90.4vh;
+  height: 90.7vh;
 `;
 const SidebarMenu = styled.ul`
   padding: 0;

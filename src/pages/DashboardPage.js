@@ -1,7 +1,7 @@
 import React from "react";
 
 // router
-import { Navigate, useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import Routes from "../Routes";
 
 // api
@@ -24,12 +24,13 @@ import ActivitiesChart from "../components/charts/ActivitiesChart";
 
 export default function DashboardPage() {
   const { userId } = useParams();
-  const { data, isLoading, error } = useSportSeeAPI("firstName", userId);
-  const userFirstName = data;
+  const navigate = useNavigate();
+  const { data, isLoading } = useSportSeeAPI("firstName", userId);
 
-  // check with another
-  if (error) {
-    return <Navigate to={`${Routes.Dashboard}/12`} />
+  let firstName = data;
+
+  if (firstName === "unknown user") {
+    return navigate(`${Routes.Dashboard}/12`, { replace: true });
   }
 
   return (
@@ -46,10 +47,10 @@ export default function DashboardPage() {
           <Dashboard>
             <DashboardTitle>
               Bonjour,{" "}
-              <DashboardTitleSpan>{!isLoading && data}</DashboardTitleSpan>
+              <DashboardTitleSpan>{!isLoading && firstName}</DashboardTitleSpan>
             </DashboardTitle>
             <DashboardSubTitle>
-              {isLoading || userFirstName === "unknown user"
+              {isLoading || firstName === "unknown user"
                 ? ""
                 : "Félicitation ! Vous avez explosé vos objectifs d'hier 👏"}
             </DashboardSubTitle>
